@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<style>
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.infoBox{
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0,0,0,0.4);
+  background-size: cover;
+  width: 40%;
+  height: 200px;
+  border-top: 10px outset rgb(96,107,120);
+  border-right: 5px outset rgb(96,107,120);
+  display: none;
+  overflow-y: scroll;
+}
+
+.infoBox p{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.5em;
+  margin-left: 10px;
+  color: white;
+}
+</style>
+<html>
+    <head>
+        <title>Planets and moons</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="webgl" style="position:relative">
+        <div id = "infoContainer" class = "infoBox">
+          <p id="info"></p>
+        </div>
+        </div>
+
+        <script src="js/dat.gui.min.js"></script>
+        <script src="js/three.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
